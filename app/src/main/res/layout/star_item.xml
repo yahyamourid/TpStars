@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="20dp"
+
+
+
+>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:civ_border_color="#B630EC"
+        app:civ_border_width="5dp"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="179dp"
+        android:layout_height="48dp"
+        android:layout_alignStart="@+id/stars"
+        android:layout_alignTop="@+id/img"
+        android:paddingTop="15dp"
+        android:text="TextView"
+        android:textColor="#B630EC"
+        android:textSize="16dp"
+        android:fontFamily=""
+        />
+    <RatingBar
+        android:id="@+id/stars"
+        style="@android:style/Widget.Material.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img"
+        android:paddingBottom="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/img"
+        android:accessibilityHeading="false"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.09"
+        android:progressTint="#FFFB11"
+        android:progressBackgroundTint="#B630EC" />
+
+    <TextView
+        android:id="@+id/idss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/img"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/country"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="13dp"
+        app:srcCompat="@mipmap/morocco"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
